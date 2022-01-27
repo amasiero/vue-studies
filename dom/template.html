@@ -2,6 +2,7 @@
 
 <div id="app">
   <p>{{ title }}</p>
+  <p>{{ greetings() }}</p>
 </div>
 
 <script>
@@ -9,6 +10,11 @@
     el: '#app',
     data: {
       title: 'Using VueJS!',
+    },
+    methods: {
+      greetings: function () {
+        return 'Have a good week!';
+      },
     },
   });
 </script>
